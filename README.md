@@ -23,21 +23,23 @@ The aim of this project is to evaluate the performance of 6 machine learning mod
 
 
 
+![sss1](https://user-images.githubusercontent.com/111541268/210272684-b89346bb-a252-434f-9601-43dbfaed46e8.png)
 
 
  * The total number of low risk (17104) is so high compared to the total number of high risk (101).
- * Model accuracy is 0.66 or 66%, since the data in unbalanced we need to look into precision and sensitivity.
- * Precision for high risk is extremely low (0.01) which reflect the low number of True Positive high risk (75) corresponding to the total number of positive low and        high risk of our model gets (TP+FP = 75+7016 = 7091). However, the sensitivity of detecting true high risks is 0.74 (TP/TP+FP = 75/101=0.74), which means 26 cases of    101 high risk were not detected.
- * Sensitivity for low risk is 0.59 which means that 10088 are actually low risk while 17104 cases were detected low risk.
+ * Model accuracy is 0.64 or 64%, since the data in unbalanced we need to look into precision and sensitivity.
+ * Precision for high risk is extremely low (0.01) which reflect the low number of True Positive high risk (65) corresponding to the total number of positive low and        high risk of our model gets (TP+FP = 66+6341 = 6407). However, the sensitivity of detecting true high risks is 0.74 (TP/TP+FP = 75/101=0.74), which means 26 cases of    101 high risk were not detected.
+ * Sensitivity for low risk is 0.63 which means that 10763  are actually low risk while 17104 cases were detected low risk.
  
  
 ### Second Model: SMOTE Oversampling Model 
  
  
- 
+ ![sss2](https://user-images.githubusercontent.com/111541268/210272694-9b11d065-ecbd-4d78-a793-7ed06d15d080.png)
+
  
  * The total number of low risk (17104) is so high compared to the total number of high risk (101).
- * Model accuracy is 0.65 or 65%,which is slightly less than that of Naive Random Oversampling Model.
+ * Model accuracy is 0.67 or 67%,which is slightly less than that of Naive Random Oversampling Model.
  * Since the data in unbalanced we need to look into precision and sensitivity.
  * Precision for high risk is still extremely low (0.01) which reflect the low number of True Positive high risk (64) corresponding to the total number of positive low    and high risk of our model gets (TP+FP = 64+5523 = 5587). However, the sensitivity of detecting true high risks has decreased to 0.63 (TP/TP+FP = 64/101=0.63),        which means 37 cases of 101 high risk were not detected.
  * Sensitivity for low risk has increased to 0.68, which means that 5523 cases are actually low risk while they have been detected as high risk.
@@ -45,7 +47,8 @@ The aim of this project is to evaluate the performance of 6 machine learning mod
  ### Third Model: Undersampling Model
  
  
- 
+ ![sss3](https://user-images.githubusercontent.com/111541268/210272706-ab1a0fbe-c6b1-4a6d-af44-b3b334a9723f.png)
+
  
  
  * Model accuracy in the Undersampling model has decreased to 0.53 or 53%,which is less than both Oversampling Models.
@@ -54,6 +57,9 @@ The aim of this project is to evaluate the performance of 6 machine learning mod
  * Sensitivity for low risk has decreased to 0.39, which means that 10500 cases are actually low risk while they have been detected as high risk.
  
  ### Fourth Model: Combination (Over and Under) Sampling
+ 
+ ![sss4](https://user-images.githubusercontent.com/111541268/210272719-b5adad20-45e6-4ace-ab75-844f0f523444.png)
+
  
  
  * Model accuracy in the Combination Sampling model is to 0.64 or 64%, which is so close to that of both Oversampling Models.
@@ -64,6 +70,7 @@ The aim of this project is to evaluate the performance of 6 machine learning mod
  
  ### Fifth Model: Balanced Random Forest Classifier
 
+![sss5](https://user-images.githubusercontent.com/111541268/210272730-87e00bbb-5e78-4bcc-a2d7-9bd8632299a7.png)
 
 
  * Model accuracy in the balanced forest classifier has increased to 0.79 or 79%, which is higher than all previous models.
@@ -75,7 +82,8 @@ The aim of this project is to evaluate the performance of 6 machine learning mod
  ### Sixth Model: Easy Ensemble AdaBoost Classifier
  
  
- 
+ ![sss6](https://user-images.githubusercontent.com/111541268/210272748-d144d815-4750-4619-acfd-9b23e415fe11.png)
+
  
  * Model accuracy in the easy ensemble AdaBoost has increased to 0.93 or 93%, which is the highest value of all models.
  * Since the data in unbalanced we need to look into precision and sensitivity.
